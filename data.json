@@ -1,0 +1,151 @@
+{
+ 
+
+  "partsDetailsData": [
+    {
+      "label": "Planned Parts",
+      "value": 889,
+      "id": "1"
+    },
+    {
+      "label": "Actual Parts Produced",
+      "value": 780,
+      "id": "2"
+    },
+    {
+      "label": "Rejected Parts",
+      "value": 200,
+      "id": "3"
+    },
+    {
+      "label": "Good Parts",
+      "value": 580,
+      "id": "4"
+    }
+  ],
+  "OverallOEETrackerData":[
+    {"id":"1","title":"Overall OEE", "percentage":80},
+    {"id":"2","title":"Availability", "percentage":92},
+    {"id":"3","title":"Performance", "percentage":90},
+    {"id":"4","title":"Quality", "percentage":89}
+  ],
+  "machineAnalysisData": {
+    "labels": ["Robodrill-22-f", "S56-26-e", "PS95-07-f", "NH4000-21-f"],
+    "datasets": [
+      {
+        "label": "Unplanned Downtime",
+        "data": [
+          {
+            "x": [0, 10],
+            "y": "Robodrill-22-f"
+          },
+          {
+            "x": [0, 20],
+            "y": "S56-26-e"
+          },
+          {
+            "x": [50, 57],
+            "y": "PS95-07-f"
+          },
+          {
+            "x": [54, 68],
+            "y": "NH4000-21-f"
+          }
+        ]
+      },
+      {
+        "label": "In Operation",
+        "data": [
+          {
+            "x": [10, 31],
+            "y": "Robodrill-22-f"
+          },
+          {
+            "x": [20, 47],
+            "y": "S56-26-e"
+          },
+          {
+            "x": [20, 31],
+            "y": "PS95-07-f"
+          },
+          {
+            "x": [24, 36],
+            "y": "NH4000-21-f"
+          }
+        ]
+      },
+      {
+        "label": "Planned Downtime",
+        "data": [
+          {
+            "x": [31, 38],
+            "y": "Robodrill-22-f"
+          },
+          {
+            "x": [47, 60],
+            "y": "S56-26-e"
+          },
+          {
+            "x": [0, 20],
+            "y": "PS95-07-f"
+          },
+          {
+            "x": [36, 54],
+            "y": "NH4000-21-f"
+          }
+        ]
+      },
+      {
+        "label": "Rework Repair",
+        "data": [
+          {
+            "x": [38, 66],
+            "y": "Robodrill-22-f"
+          },
+          {
+            "x": [60, 70],
+            "y": "S56-26-e"
+          },
+          {
+            "x": [31, 50],
+            "y": "PS95-07-f"
+          },
+          {
+            "x": [0, 24],
+            "y": "NH4000-21-f"
+          }
+        ]
+      }
+    ]
+  },
+  "efficientMachines": {
+    "labels": ["Robodrill-22-f"],
+    "datasets": [
+      {
+        "label": "Rework Repair",
+        "data": [
+          {
+            "x": [0,42],
+            "y":"Robodrill-22-f"
+          },
+          {
+            "x": [0,10],
+            "y":"S56-26-e"
+          },
+          {
+            "x": [0,35],
+            "y":"PS95-07-f"
+          },
+          {
+            "x": [0,22],
+            "y":"NH4000-21-f"
+          },
+          {
+            "x": [0,27],
+            "y":"PS65-13-1"
+          }
+        ]
+      }
+    ]
+  }
+}

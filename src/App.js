@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import PartsDetails from "./components/PartsDetails";
+import TopMachineEfficientChart from "./components/TopMachineEfficientChart";
+import { Col, Container, Row } from "react-bootstrap";
+import MachineAnalysisChart from "./components/MachineAnalysisChart";
+import OverallOEETrackerComponent from "./components/OverallOEETrackerComponent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className=" mt-5 d-flex flex-column justify-content-around">
+      <Row className="mb-4">
+        <Col md={12} lg={6} className="mb-md-4 mb-0">
+          <PartsDetails />
+        </Col>
+        <Col md={12} lg={6} className="mb-md-4 mb-0">
+          <OverallOEETrackerComponent />
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12} lg={6}>
+          <MachineAnalysisChart />
+        </Col>
+        <Col md={12} lg={6}>
+          <TopMachineEfficientChart />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

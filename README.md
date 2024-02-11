@@ -2,4 +2,4 @@
 
 ### Image Demo
 
-![Screenshot] ("public/acg_task_img.png")
+![Screenshot] (`public/acg_task_img.png`)
